@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+   <title>Twitter Badge On The Fly</title>
+   <link rel="stylesheet" href="http://yui.yahooapis.com/2.8.0r4/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
+   <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/base/base.css" type="text/css">
+   <link rel="stylesheet" href="css/syntax.css" type="text/css">
+   <style type="text/css">
+    h1{margin:0 0 .5em 0;color:#69c;font-size: 40px}
+   .syntax{font-size: 15px;padding:20px}
+   body{font-size: 17px}
+   h1{font-size: 50px}
+    body,html{background:#fff;color:#000;font-family:helvetica}    
+    h1{margin:0 0 .5em 0;color:#ccc;font-size: 40px}
+    #bd{background:#fff;height: auto;border:1em solid #fff;-moz-border-radius:5px;width:650px}
+    #ft{text-align: left;padding:1em 0;color: #999;}
+
+   </style>
+</head>
+<body class="yui-skin-sam">
+<div id="doc" class="yui-t7">
+   <div id="hd" role="banner"><h1>Twitter Badge on the fly</h1></div>
+   <div id="bd" role="main">
+	<div class="yui-g">
+
+<!-- start twitter -->
+<div id="twitter" class="twtr-widget twtr-widget-profile amount-10 skin-blue user-mootools type-user">
+      <div class="twtr-doc" style="width: 350px">
+                <div class="twtr-hd" id="twtr-hd">
+                      <div class='twtr-spinner twtr-inactive'></div>
+                </div>
+                <div class="twtr-bd" id="twtr-bd">
+                      <div class="twtr-timeline" style="height: 155px" id="twtr-timeline"></div>
+                </div>
+                <div class="twtr-ft" id="twtr-ft">
+                </div>
+      </div> 
+</div>
+<!-- end twitter -->
+
+	</div>
+	</div>
+  <br/>
+  <br/>
+  <p>Copy/paste the following script to your website, inside the HTML's body, where you want to be shown</p>
+  <div class="syntax">
+   <pre>
+
+&lt;!-- start twitter --&gt;
+<span class="nt">&lt;div</span> id=<span class="s">"twitter"</span> class=<span class="s">"twtr-widget twtr-widget-profile amount-10 skin-blue user-mootools type-user"</span>&gt;
+      <span class="nt">&lt;div</span> class=<span class="s">"twtr-doc" style="width: 350px"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> class=<span class="s">"twtr-hd"</span> id=<span class="s">"twtr-hd"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;div</span> class=<span class="s">'twtr-spinner twtr-inactive'</span><span class="nt">&gt;&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> class=<span class="s">"twtr-bd"</span> id=<span class="s">"twtr-bd"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;div</span> class=<span class="s">"twtr-timeline"</span> style=<span class="s">"height: 155px"</span> id=<span class="s">"twtr-timeline"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> class=<span class="s">"twtr-ft"</span> id=<span class="s">"twtr-ft"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+&lt;!-- end twitter --&gt;
+
+<span class="nt">&lt;script</span> type=<span class="s">&quot;text/javascript&quot; src="http://ztwitterbadge.appspot.com/scripts/twitterbadge.js&quot;</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;script</span> type=<span class="s">"text/javascript"</span>&gt;twitterbadge.init({})<span class="nt">&lt;/script&gt;</span>
+
+   </pre>
+   </div>
+   <div id="ft" role="contentinfo"><p>&copy; 2013 Some Rights Reserved | created by  @<a href="http://twitter.com/thinkphp">thinkphp</a> | Download on <a href="http://github.com/thinkphp">GitHub </a></p></div>
+</div>
+
+<script type="text/javascript" src="scripts/twitterbadge.js"></script>
+<script type="text/javascript">twitterbadge.init({})</script>
+</body>
+</html>
+
